@@ -17,7 +17,8 @@ defmodule SurfaceBootstrap4DemoWeb.Router do
   scope "/", SurfaceBootstrap4DemoWeb do
     pipe_through :browser
 
-    live "/", PageLive, :index
+    live "/", LayoutLive, :index
+    live "/components", ComponentsLive, :index
   end
 
   # Other scopes may use custom stacks.
