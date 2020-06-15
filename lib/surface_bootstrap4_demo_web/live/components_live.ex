@@ -4,6 +4,8 @@ defmodule SurfaceBootstrap4DemoWeb.ComponentsLive do
   alias SurfaceBootstrap4.Container
   alias SurfaceBootstrap4.Container.{Row, Col}
   alias SurfaceBootstrap4.Button
+  alias SurfaceBootstrap4.Nav
+  alias SurfaceBootstrap4.Nav.{NavItem, NavLink}
 
   @impl true
   def mount(_params, _session, socket) do

@@ -90,6 +90,34 @@
 
     <Row>
       <Col>
+        <h2>Navs</h2>
+
+        <Nav>
+          <NavItem><NavLink to="#{Routes.components_path(@socket, :index)}" active>Components</NavLink></NavItem>
+          <NavItem><NavLink to="#{Routes.layout_path(@socket, :index)}">Layout</NavLink></NavItem>
+          <NavItem><NavLink to="/" disabled>Disabled</NavLink></NavItem>
+        </Nav>
+
+        <pre class="bg-light px-3 mt-3"><code>
+&lt;&percnt;= ~H&quot;&quot;&quot;
+  &lt;Nav&gt;
+    &lt;NavItem&gt;
+      &lt;NavLink to="#{Routes.components_path(@socket, :index)}" active&gt;Components&lt;/NavLink&gt;
+    &lt;/NavItem&gt;
+    &lt;NavItem&gt;
+      &lt;NavLink to="#{Routes.layout_path(@socket, :index)}"&gt;Layout&lt;/NavLink&gt;
+    &lt;/NavItem&gt;
+    &lt;NavItem&gt;
+      &lt;NavLink to="/" disabled&gt;Disabled&lt;/NavLink&gt;
+    &lt;/NavItem&gt;
+  &lt;/Nav&gt;
+&percnt;&gt;
+        </code></pre>
+      </Col>
+    </Row>
+
+    <Row>
+      <Col>
         <h5 class="my-5">More Surface Bootstrap 4 components coming soon.</h5>
       </Col>
     </Row>
