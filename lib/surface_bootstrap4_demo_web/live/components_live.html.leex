@@ -118,6 +118,28 @@
 
     <Row>
       <Col>
+        <h2>Progress</h2>
+
+        <Progress value="5" class={{ "my-1" }}>5%</Progress>
+        <Progress value="25" color="danger" class={{ "my-1" }}>25%</Progress>
+        <Progress value="50" color="warning" class={{ "my-1" }}>50%</Progress>
+        <Progress value="75" color="primary" class={{ "my-1" }} striped>75% striped</Progress>
+        <Progress value="100" color="success" class={{ "my-1" }} striped animated>100% striped animated</Progress>
+
+        <pre class="bg-light px-3 mt-3"><code>
+&lt;&percnt;= ~H&quot;&quot;&quot;
+&lt;Progress value="5"&gt;5%&lt;/Progress&gt;
+&lt;Progress value="25" color="danger"&gt;25%&lt;/Progress&gt;
+&lt;Progress value="50" color="warning"&gt;50%&lt;/Progress&gt;
+&lt;Progress value="75" color="primary" striped&gt;75% striped&lt;/Progress&gt;
+&lt;Progress value="100" color="success" striped animated&gt;100% striped animated&lt;/Progress&gt;
+&percnt;&gt;
+        </code></pre>
+      </Col>
+    </Row>
+
+    <Row>
+      <Col>
         <h5 class="my-5">More Surface Bootstrap 4 components coming soon.</h5>
       </Col>
     </Row>
