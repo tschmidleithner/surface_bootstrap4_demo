@@ -6,7 +6,7 @@ defmodule SurfaceBootstrap4DemoWeb.ComponentsLive do
   alias SurfaceBootstrap4.Button
   alias SurfaceBootstrap4.Nav
   alias SurfaceBootstrap4.Nav.{NavItem, NavLink}
-  alias SurfaceBootstrap4.Progress
+  alias SurfaceBootstrap4DemoWeb.Components.ProgressLive
 
   @impl true
   def mount(_params, _session, socket) do
