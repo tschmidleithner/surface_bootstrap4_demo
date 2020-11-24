@@ -6,6 +6,7 @@ defmodule SurfaceBootstrap4DemoWeb.LayoutLive do
 
   @impl true
   def mount(_params, _session, socket) do
+    socket = Surface.init(socket)
     {:ok, assign(socket, page_title: "Layout")}
   end
 end

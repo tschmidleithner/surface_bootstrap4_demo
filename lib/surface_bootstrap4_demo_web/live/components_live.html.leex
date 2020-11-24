@@ -118,8 +118,8 @@
         <h2>Navs</h2>
 
         <Nav>
-          <NavItem><NavLink to="#{Routes.components_path(@socket, :index)}" active>Components</NavLink></NavItem>
-          <NavItem><NavLink to="#{Routes.layout_path(@socket, :index)}">Layout</NavLink></NavItem>
+          <NavItem><NavLink to="{{ Routes.components_path(@socket, :index) }}" active>Components</NavLink></NavItem>
+          <NavItem><NavLink to="{{ Routes.layout_path(@socket, :index) }}">Layout</NavLink></NavItem>
           <NavItem><NavLink to="/" disabled>Disabled</NavLink></NavItem>
         </Nav>
 
