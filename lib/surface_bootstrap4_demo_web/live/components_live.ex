@@ -12,6 +12,7 @@ defmodule SurfaceBootstrap4DemoWeb.ComponentsLive do
 
   @impl true
   def mount(_params, _session, socket) do
+    socket = Surface.init(socket)
     {:ok, assign(socket, page_title: "Components")}
   end
 end
