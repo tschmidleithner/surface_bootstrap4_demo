@@ -118,8 +118,8 @@
         <h2>Navs</h2>
 
         <Nav>
-          <NavItem><NavLink to="#{Routes.components_path(@socket, :index)}" active>Components</NavLink></NavItem>
-          <NavItem><NavLink to="#{Routes.layout_path(@socket, :index)}">Layout</NavLink></NavItem>
+          <NavItem><NavLink to="/components" active>Components</NavLink></NavItem>
+          <NavItem><NavLink to="/">Layout</NavLink></NavItem>
           <NavItem><NavLink to="/" disabled>Disabled</NavLink></NavItem>
         </Nav>
 
@@ -127,10 +127,10 @@
 &lt;&percnt;= ~H&quot;&quot;&quot;
   &lt;Nav&gt;
     &lt;NavItem&gt;
-      &lt;NavLink to="#{Routes.components_path(@socket, :index)}" active&gt;Components&lt;/NavLink&gt;
+      &lt;NavLink to="/components" active&gt;Components&lt;/NavLink&gt;
     &lt;/NavItem&gt;
     &lt;NavItem&gt;
-      &lt;NavLink to="#{Routes.layout_path(@socket, :index)}"&gt;Layout&lt;/NavLink&gt;
+      &lt;NavLink to="/"&gt;Layout&lt;/NavLink&gt;
     &lt;/NavItem&gt;
     &lt;NavItem&gt;
       &lt;NavLink to="/" disabled&gt;Disabled&lt;/NavLink&gt;
