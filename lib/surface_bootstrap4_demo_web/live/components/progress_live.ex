@@ -25,10 +25,10 @@ defmodule SurfaceBootstrap4DemoWeb.Components.ProgressLive do
   end
 
   def handle_event("inc", _value, socket) do
-    {:noreply, update(socket, :value, & &1 + 1)}
+    {:noreply, update(socket, :value, &(&1 + 1))}
   end
 
   def handle_event("dec", _value, socket) do
-    {:noreply, update(socket, :value, & &1 - 1)}
+    {:noreply, update(socket, :value, &(&1 - 1))}
   end
 end
